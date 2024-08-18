@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/xingxun/uav_control/devel/.private/decomp_ros_utils/setup.sh

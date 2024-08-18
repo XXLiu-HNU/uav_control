@@ -1,0 +1,7 @@
+/usr/bin/cmake -S/home/xingxun/uav_control/src/utils/uav_utils -B/home/xingxun/uav_control/build/uav_utils --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /home/xingxun/uav_control/build/uav_utils/CMakeFiles /home/xingxun/uav_control/build/uav_utils/CMakeFiles/progress.marks
+/usr/bin/make -f CMakeFiles/Makefile2 all
+make[1]: Entering directory '/home/xingxun/uav_control/build/uav_utils'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/xingxun/uav_control/build/uav_utils'
+/usr/bin/cmake -E cmake_progress_start /home/xingxun/uav_control/build/uav_utils/CMakeFiles 0

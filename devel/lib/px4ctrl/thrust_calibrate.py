@@ -1,0 +1,1 @@
+/home/xingxun/uav_control/devel/.private/px4ctrl/lib/px4ctrl/thrust_calibrate.py

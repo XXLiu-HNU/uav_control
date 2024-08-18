@@ -1,0 +1,1 @@
+/home/xingxun/uav_control/devel/.private/ego_planner/share/gennodejs/ros/ego_planner/msg/_index.js

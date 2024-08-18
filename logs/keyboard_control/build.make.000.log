@@ -1,0 +1,8 @@
+[35m[1mScanning dependencies of target keyboard_listener[0m
+[35m[1mScanning dependencies of target keyboard_input[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/keyboard_input.dir/src/keyboard_input.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/keyboard_listener.dir/src/keyboard_listener.cpp.o[0m
+[ 75%] [32m[1mLinking CXX executable /home/xingxun/uav_control/devel/.private/keyboard_control/lib/keyboard_control/keyboard_input[0m
+[ 75%] Built target keyboard_input
+[100%] [32m[1mLinking CXX executable /home/xingxun/uav_control/devel/.private/keyboard_control/lib/keyboard_control/keyboard_listener[0m
+[100%] Built target keyboard_listener

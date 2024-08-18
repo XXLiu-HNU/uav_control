@@ -1,0 +1,5 @@
+[35m[1mScanning dependencies of target fastdrone[0m
+[ 50%] Built target my_bspline_node
+[ 66%] [32mBuilding CXX object CMakeFiles/fastdrone.dir/src/fastdrone.cpp.o[0m
+[ 83%] [32m[1mLinking CXX executable /home/xingxun/uav_control/devel/.private/my_bspline/lib/my_bspline/fastdrone[0m
+[100%] Built target fastdrone

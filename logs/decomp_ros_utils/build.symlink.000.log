@@ -1,0 +1,4 @@
+Symlinking /home/xingxun/uav_control/devel/share/decomp_ros_utils/cmake/decomp_ros_utilsConfig.cmake
+Symlinking /home/xingxun/uav_control/devel/share/decomp_ros_utils/cmake/decomp_ros_utilsConfig-version.cmake
+Symlinking /home/xingxun/uav_control/devel/lib/libdecomp_rviz_plugins.so
+Symlinking /home/xingxun/uav_control/devel/lib/pkgconfig/decomp_ros_utils.pc

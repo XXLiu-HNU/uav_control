@@ -1,0 +1,4 @@
+Symlinking /home/xingxun/uav_control/devel/share/rviz_plugins/cmake/rviz_pluginsConfig-version.cmake
+Symlinking /home/xingxun/uav_control/devel/share/rviz_plugins/cmake/rviz_pluginsConfig.cmake
+Symlinking /home/xingxun/uav_control/devel/lib/librviz_plugins.so
+Symlinking /home/xingxun/uav_control/devel/lib/pkgconfig/rviz_plugins.pc

@@ -1,0 +1,12 @@
+[35m[1mScanning dependencies of target fastdrone[0m
+[ 50%] Built target my_bspline_node
+[ 66%] [32mBuilding CXX object CMakeFiles/fastdrone.dir/src/fastdrone.cpp.o[0m
+[ 83%] [32mBuilding CXX object CMakeFiles/fastdrone.dir/src/uniform_bspline.cpp.o[0m
+[01m[K/home/xingxun/uav_control/src/my_bspline/src/fastdrone.cpp:12:10:[m[K [01;31m[Kfatal error: [m[Kego_planer/Bspline.h: No such file or directory
+   12 | #include [01;31m[K"ego_planer/Bspline.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/fastdrone.dir/build.make:63: CMakeFiles/fastdrone.dir/src/fastdrone.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[1]: *** [CMakeFiles/Makefile2:648: CMakeFiles/fastdrone.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

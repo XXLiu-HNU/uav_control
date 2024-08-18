@@ -1,0 +1,1 @@
+/home/xingxun/uav_control/devel/.private/quadrotor_msgs/share/gennodejs/ros/quadrotor_msgs/msg/TRPYCommand.js

@@ -1,0 +1,6 @@
+devel_space: /home/xingxun/uav_control/devel
+install: false
+install_space: /home/xingxun/uav_control/install
+profile: default
+source_space: /home/xingxun/uav_control/src
+workspace: /home/xingxun/uav_control

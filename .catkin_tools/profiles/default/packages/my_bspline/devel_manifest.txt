@@ -1,0 +1,7 @@
+my_bspline
+/home/xingxun/uav_control/devel/.private/my_bspline/cmake.lock /home/xingxun/uav_control/devel/./cmake.lock
+/home/xingxun/uav_control/devel/.private/my_bspline/share/my_bspline/cmake/my_bsplineConfig.cmake /home/xingxun/uav_control/devel/share/my_bspline/cmake/my_bsplineConfig.cmake
+/home/xingxun/uav_control/devel/.private/my_bspline/share/my_bspline/cmake/my_bsplineConfig-version.cmake /home/xingxun/uav_control/devel/share/my_bspline/cmake/my_bsplineConfig-version.cmake
+/home/xingxun/uav_control/devel/.private/my_bspline/lib/pkgconfig/my_bspline.pc /home/xingxun/uav_control/devel/lib/pkgconfig/my_bspline.pc
+/home/xingxun/uav_control/devel/.private/my_bspline/lib/my_bspline/my_bspline_node /home/xingxun/uav_control/devel/lib/my_bspline/my_bspline_node
+/home/xingxun/uav_control/devel/.private/my_bspline/lib/my_bspline/fastdrone /home/xingxun/uav_control/devel/lib/my_bspline/fastdrone

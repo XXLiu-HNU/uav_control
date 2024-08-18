@@ -1,0 +1,1 @@
+/home/xingxun/uav_control/devel/.private/rviz_plugins/share/rviz_plugins/cmake/rviz_pluginsConfig.cmake
