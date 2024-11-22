@@ -1,0 +1,8 @@
+onboard_detector
+/home/xingxun/uav_control/devel/.private/onboard_detector/cmake.lock /home/xingxun/uav_control/devel/./cmake.lock
+/home/xingxun/uav_control/devel/.private/onboard_detector/share/onboard_detector/cmake/onboard_detectorConfig-version.cmake /home/xingxun/uav_control/devel/share/onboard_detector/cmake/onboard_detectorConfig-version.cmake
+/home/xingxun/uav_control/devel/.private/onboard_detector/share/onboard_detector/cmake/onboard_detectorConfig.cmake /home/xingxun/uav_control/devel/share/onboard_detector/cmake/onboard_detectorConfig.cmake
+/home/xingxun/uav_control/devel/.private/onboard_detector/lib/libonboard_detector.so /home/xingxun/uav_control/devel/lib/libonboard_detector.so
+/home/xingxun/uav_control/devel/.private/onboard_detector/lib/pkgconfig/onboard_detector.pc /home/xingxun/uav_control/devel/lib/pkgconfig/onboard_detector.pc
+/home/xingxun/uav_control/devel/.private/onboard_detector/lib/onboard_detector/detector_node /home/xingxun/uav_control/devel/lib/onboard_detector/detector_node
+/home/xingxun/uav_control/devel/.private/onboard_detector/lib/onboard_detector/fake_detector_node /home/xingxun/uav_control/devel/lib/onboard_detector/fake_detector_node

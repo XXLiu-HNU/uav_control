@@ -1,9 +1,8 @@
-[35m[1mScanning dependencies of target px4ctrl_node[0m
-[ 33%] [32mBuilding CXX object CMakeFiles/px4ctrl_node.dir/src/PX4CtrlFSM.cpp.o[0m
-[ 33%] [32mBuilding CXX object CMakeFiles/px4ctrl_node.dir/src/px4ctrl_node.cpp.o[0m
-[ 50%] [32mBuilding CXX object CMakeFiles/px4ctrl_node.dir/src/controller.cpp.o[0m
-[ 66%] [32mBuilding CXX object CMakeFiles/px4ctrl_node.dir/src/input.cpp.o[0m
-[ 83%] [32mBuilding CXX object CMakeFiles/px4ctrl_node.dir/src/PX4CtrlParam.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/px4ctrl_node.dir/src/PX4CtrlFSM.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/px4ctrl_node.dir/src/px4ctrl_node.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/px4ctrl_node.dir/src/PX4CtrlParam.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/px4ctrl_node.dir/src/controller.cpp.o[0m
+[ 83%] [32mBuilding CXX object CMakeFiles/px4ctrl_node.dir/src/input.cpp.o[0m
 [01m[K/home/xingxun/uav_control/src/px4ctrl/src/controller.cpp:[m[K In member function ‘[01m[Kquadrotor_msgs::Px4ctrlDebug LinearControl::calculateControl(const Desired_State_t&, const Odom_Data_t&, const Imu_Data_t&, Controller_Output_t&)[m[K’:
 [01m[K/home/xingxun/uav_control/src/px4ctrl/src/controller.cpp:37:25:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kyaw[m[K’ [[01;35m[K-Wunused-variable[m[K]
    37 |       double roll,pitch,[01;35m[Kyaw[m[K,yaw_imu;

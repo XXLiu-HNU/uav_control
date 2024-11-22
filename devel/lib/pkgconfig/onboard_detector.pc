@@ -1,0 +1,1 @@
+/home/xingxun/uav_control/devel/.private/onboard_detector/lib/pkgconfig/onboard_detector.pc

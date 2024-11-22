@@ -29,7 +29,7 @@ add_custom_target(_ego_planner_generate_messages_check_deps_${_filename}
 
 get_filename_component(_filename "/home/xingxun/uav_control/src/ego_planner/msg/MultiBsplines.msg" NAME_WE)
 add_custom_target(_ego_planner_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "ego_planner" "/home/xingxun/uav_control/src/ego_planner/msg/MultiBsplines.msg" "geometry_msgs/Point:ego_planner/Bspline"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "ego_planner" "/home/xingxun/uav_control/src/ego_planner/msg/MultiBsplines.msg" "ego_planner/Bspline:geometry_msgs/Point"
 )
 
 #
@@ -53,7 +53,7 @@ _generate_msg_cpp(ego_planner
 _generate_msg_cpp(ego_planner
   "/home/xingxun/uav_control/src/ego_planner/msg/MultiBsplines.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/xingxun/uav_control/src/ego_planner/msg/Bspline.msg"
+  "/home/xingxun/uav_control/src/ego_planner/msg/Bspline.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/ego_planner
 )
 
@@ -102,7 +102,7 @@ _generate_msg_eus(ego_planner
 _generate_msg_eus(ego_planner
   "/home/xingxun/uav_control/src/ego_planner/msg/MultiBsplines.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/xingxun/uav_control/src/ego_planner/msg/Bspline.msg"
+  "/home/xingxun/uav_control/src/ego_planner/msg/Bspline.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/ego_planner
 )
 
@@ -151,7 +151,7 @@ _generate_msg_lisp(ego_planner
 _generate_msg_lisp(ego_planner
   "/home/xingxun/uav_control/src/ego_planner/msg/MultiBsplines.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/xingxun/uav_control/src/ego_planner/msg/Bspline.msg"
+  "/home/xingxun/uav_control/src/ego_planner/msg/Bspline.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/ego_planner
 )
 
@@ -200,7 +200,7 @@ _generate_msg_nodejs(ego_planner
 _generate_msg_nodejs(ego_planner
   "/home/xingxun/uav_control/src/ego_planner/msg/MultiBsplines.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/xingxun/uav_control/src/ego_planner/msg/Bspline.msg"
+  "/home/xingxun/uav_control/src/ego_planner/msg/Bspline.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/ego_planner
 )
 
@@ -249,7 +249,7 @@ _generate_msg_py(ego_planner
 _generate_msg_py(ego_planner
   "/home/xingxun/uav_control/src/ego_planner/msg/MultiBsplines.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/xingxun/uav_control/src/ego_planner/msg/Bspline.msg"
+  "/home/xingxun/uav_control/src/ego_planner/msg/Bspline.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/ego_planner
 )
 

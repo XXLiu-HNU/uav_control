@@ -1,0 +1,28 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/opt/ros/noetic/include/**",
+        "/home/xingxun/uav_control/devel/include/**",
+        "/home/xingxun/uav_control/src/utils/DecompROS/decomp_ros_utils/include/**",
+        "/home/xingxun/uav_control/src/ego_planner/include/**",
+        "/home/xingxun/uav_control/src/my_bspline/include/**",
+        "/home/xingxun/uav_control/src/onboard_detector/include/**",
+        "/home/xingxun/uav_control/src/utils/pose_utils/include/**",
+        "/home/xingxun/uav_control/src/quadrotor_msgs/include/**",
+        "/home/xingxun/uav_control/src/utils/uav_utils/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

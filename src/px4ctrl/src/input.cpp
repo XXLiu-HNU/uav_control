@@ -149,10 +149,10 @@ void Odom_Data_t::feed(nav_msgs::OdometryConstPtr pMsg)
     static ros::Time last_clear_count_time = ros::Time(0.0);
     if ( (now - last_clear_count_time).toSec() > 1.0 )
     {
-        // if ( one_min_count < 100 )
-        // {
-        //     ROS_WARN("ODOM frequency seems lower than 100Hz, which is too low!");
-        // }
+        if ( one_min_count < 100 )
+        {
+            // ROS_WARN("ODOM frequency seems lower than 100Hz, which is too low!");
+        }
         one_min_count = 0;
         last_clear_count_time = now;
     }
@@ -189,10 +189,10 @@ void Imu_Data_t::feed(sensor_msgs::ImuConstPtr pMsg)
     static ros::Time last_clear_count_time = ros::Time(0.0);
     if ( (now - last_clear_count_time).toSec() > 1.0 )
     {
-        // if ( one_min_count < 100 )
-        // {
-        //     ROS_WARN("IMU frequency seems lower than 100Hz, which is too low!");
-        // }
+        if ( one_min_count < 100 )
+        {
+            // ROS_WARN("IMU frequency seems lower than 100Hz, which is too low!");
+        }
         one_min_count = 0;
         last_clear_count_time = now;
     }
@@ -275,11 +275,11 @@ void Battery_Data_t::feed(sensor_msgs::BatteryStateConstPtr pMsg)
     static ros::Time last_print_t = ros::Time(0);
     if (percentage > 0.05)
     {
-       /*  if ((rcv_stamp - last_print_t).toSec() > 10)
+        if ((rcv_stamp - last_print_t).toSec() > 10)
         {
-            ROS_INFO("[px4ctrl] Voltage=%.3f, percentage=%.3f", volt, percentage);
+            // ROS_INFO("[px4ctrl] Voltage=%.3f, percentage=%.3f", volt, percentage);
             last_print_t = rcv_stamp;
-        } */
+        }
     }
     else
     {
@@ -304,4 +304,5 @@ void Takeoff_Land_Data_t::feed(quadrotor_msgs::TakeoffLandConstPtr pMsg)
 
     triggered = true;
     takeoff_land_cmd = pMsg->takeoff_land_cmd;
+    ROS_INFO("get takeoff message");
 }

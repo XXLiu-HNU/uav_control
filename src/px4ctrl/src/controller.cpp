@@ -48,7 +48,7 @@ LinearControl::calculateControl(const Desired_State_t &des,
       Eigen::Quaterniond q = Eigen::AngleAxisd(des.yaw,Eigen::Vector3d::UnitZ())
         * Eigen::AngleAxisd(pitch,Eigen::Vector3d::UnitY())
         * Eigen::AngleAxisd(roll,Eigen::Vector3d::UnitX());
-      u.q = imu.q * odom.q.inverse() * q;
+      u.q = imu.q * odom.q.inverse() * q;    // see https://blog.csdn.net/weixin_44684139/article/details/109817172. convert the q in ENU frame (defaut in ROS, also in odom)  into the NED frame (used in FCU). because we use the setpoint_raw/attitude message, so we need to convert it manually. setpoint_attitude/attitude uses ENU and no need to convert.
 
 
   /* WRITE YOUR CODE HERE */

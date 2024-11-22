@@ -22,13 +22,13 @@ int main(int argc, char **argv)
     //uav0
     ros::NodeHandle nh0;
     ros::Subscriber state_sub0 = nh0.subscribe<mavros_msgs::State>
-            ("mavros/state", 10, state_cb);
+            ("uav0/mavros/state", 10, state_cb);
     ros::Publisher local_pos_pub0 = nh0.advertise<geometry_msgs::PoseStamped>
-            ("mavros/setpoint_position/local", 10);
+            ("uav0/mavros/setpoint_position/local", 10);
     ros::ServiceClient arming_client0 = nh0.serviceClient<mavros_msgs::CommandBool>
-            ("mavros/cmd/arming");
+            ("uav0/mavros/cmd/arming");
     ros::ServiceClient set_mode_client0 = nh0.serviceClient<mavros_msgs::SetMode>
-            ("mavros/set_mode");
+            ("uav0/mavros/set_mode");
  
     //the setpoint publishing rate MUST be faster than 2Hz
     ros::Rate rate(20.0);

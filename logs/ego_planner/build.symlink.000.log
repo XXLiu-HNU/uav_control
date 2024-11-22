@@ -1,4 +1,3 @@
-Symlinking /home/xingxun/uav_control/devel/share/ego_planer/cmake/ego_planer-msg-paths.cmake
 Symlinking /home/xingxun/uav_control/devel/share/common-lisp/ros/ego_planner/msg/_package_MultiBsplines.lisp
 Symlinking /home/xingxun/uav_control/devel/share/common-lisp/ros/ego_planner/msg/_package_Bspline.lisp
 Symlinking /home/xingxun/uav_control/devel/share/common-lisp/ros/ego_planner/msg/_package_DataDisp.lisp
@@ -20,9 +19,8 @@ Symlinking /home/xingxun/uav_control/devel/share/gennodejs/ros/ego_planner/msg/B
 Symlinking /home/xingxun/uav_control/devel/share/gennodejs/ros/ego_planner/msg/DataDisp.js
 Symlinking /home/xingxun/uav_control/devel/share/gennodejs/ros/ego_planner/msg/_index.js
 Symlinking /home/xingxun/uav_control/devel/share/gennodejs/ros/ego_planner/msg/MultiBsplines.js
-Symlinking /home/xingxun/uav_control/devel/lib/libego_planner.so
+Symlinking /home/xingxun/uav_control/devel/lib/libtraj_utils.so
 Symlinking /home/xingxun/uav_control/devel/lib/pkgconfig/ego_planner.pc
-Symlinking /home/xingxun/uav_control/devel/lib/python3/dist-packages/ego_planer/__init__.py
 Symlinking /home/xingxun/uav_control/devel/lib/python3/dist-packages/ego_planner/__init__.py
 Symlinking /home/xingxun/uav_control/devel/lib/python3/dist-packages/ego_planner/msg/_Bspline.py
 Symlinking /home/xingxun/uav_control/devel/lib/python3/dist-packages/ego_planner/msg/__init__.py
@@ -31,3 +29,18 @@ Symlinking /home/xingxun/uav_control/devel/lib/python3/dist-packages/ego_planner
 Symlinking /home/xingxun/uav_control/devel/include/ego_planner/DataDisp.h
 Symlinking /home/xingxun/uav_control/devel/include/ego_planner/Bspline.h
 Symlinking /home/xingxun/uav_control/devel/include/ego_planner/MultiBsplines.h
+Cleaning: (/home/xingxun/uav_control/devel/.private/ego_planner/share/ego_planer/cmake/ego_planer-msg-paths.cmake, /home/xingxun/uav_control/devel/share/ego_planer/cmake/ego_planer-msg-paths.cmake)
+Cleaning: (/home/xingxun/uav_control/devel/.private/ego_planner/share/traj_utils/cmake/traj_utils-msg-paths.cmake, /home/xingxun/uav_control/devel/share/traj_utils/cmake/traj_utils-msg-paths.cmake)
+Cleaning: (/home/xingxun/uav_control/devel/.private/ego_planner/lib/libego_planner.so, /home/xingxun/uav_control/devel/lib/libego_planner.so)
+Cleaning: (/home/xingxun/uav_control/devel/.private/ego_planner/lib/python3/dist-packages/ego_planer/__init__.py, /home/xingxun/uav_control/devel/lib/python3/dist-packages/ego_planer/__init__.py)
+Cleaning: (/home/xingxun/uav_control/devel/.private/ego_planner/lib/python3/dist-packages/traj_utils/__init__.py, /home/xingxun/uav_control/devel/lib/python3/dist-packages/traj_utils/__init__.py)
+Unlinking: /home/xingxun/uav_control/devel/share/ego_planer/cmake/ego_planer-msg-paths.cmake
+Already unlinked: {}
+Unlinking: /home/xingxun/uav_control/devel/share/traj_utils/cmake/traj_utils-msg-paths.cmake
+Already unlinked: {}
+Unlinking: /home/xingxun/uav_control/devel/lib/libego_planner.so
+Already unlinked: {}
+Unlinking: /home/xingxun/uav_control/devel/lib/python3/dist-packages/ego_planer/__init__.py
+Already unlinked: {}
+Unlinking: /home/xingxun/uav_control/devel/lib/python3/dist-packages/traj_utils/__init__.py
+Already unlinked: {}

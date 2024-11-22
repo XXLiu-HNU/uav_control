@@ -1,0 +1,9 @@
+[ 10%] [32mBuilding CXX object CMakeFiles/onboard_detector.dir/include/onboard_detector/fakeDetector.cpp.o[0m
+In file included from [01m[K/home/xingxun/uav_control/src/onboard_detector/include/onboard_detector/fakeDetector.cpp:7[m[K:
+[01m[K/home/xingxun/uav_control/src/onboard_detector/include/onboard_detector/fakeDetector.h:13:10:[m[K [01;31m[Kfatal error: [m[Kgazebo_msgs/ModelStates.h: No such file or directory
+   13 | #include [01;31m[K<gazebo_msgs/ModelStates.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/onboard_detector.dir/build.make:132: CMakeFiles/onboard_detector.dir/include/onboard_detector/fakeDetector.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:1082: CMakeFiles/onboard_detector.dir/all] Error 2
+make: *** [Makefile:146: all] Error 2

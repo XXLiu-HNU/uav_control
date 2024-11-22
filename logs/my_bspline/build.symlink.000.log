@@ -2,3 +2,4 @@ Symlinking /home/xingxun/uav_control/devel/share/my_bspline/cmake/my_bsplineConf
 Symlinking /home/xingxun/uav_control/devel/share/my_bspline/cmake/my_bsplineConfig-version.cmake
 Symlinking /home/xingxun/uav_control/devel/lib/pkgconfig/my_bspline.pc
 Symlinking /home/xingxun/uav_control/devel/lib/my_bspline/my_bspline_node
+Symlinking /home/xingxun/uav_control/devel/lib/my_bspline/fastdrone

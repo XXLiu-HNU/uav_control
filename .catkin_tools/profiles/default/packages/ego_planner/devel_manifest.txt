@@ -1,6 +1,5 @@
 ego_planner
 /home/xingxun/uav_control/devel/.private/ego_planner/cmake.lock /home/xingxun/uav_control/devel/./cmake.lock
-/home/xingxun/uav_control/devel/.private/ego_planner/share/ego_planer/cmake/ego_planer-msg-paths.cmake /home/xingxun/uav_control/devel/share/ego_planer/cmake/ego_planer-msg-paths.cmake
 /home/xingxun/uav_control/devel/.private/ego_planner/share/common-lisp/ros/ego_planner/msg/_package_MultiBsplines.lisp /home/xingxun/uav_control/devel/share/common-lisp/ros/ego_planner/msg/_package_MultiBsplines.lisp
 /home/xingxun/uav_control/devel/.private/ego_planner/share/common-lisp/ros/ego_planner/msg/_package_Bspline.lisp /home/xingxun/uav_control/devel/share/common-lisp/ros/ego_planner/msg/_package_Bspline.lisp
 /home/xingxun/uav_control/devel/.private/ego_planner/share/common-lisp/ros/ego_planner/msg/_package_DataDisp.lisp /home/xingxun/uav_control/devel/share/common-lisp/ros/ego_planner/msg/_package_DataDisp.lisp
@@ -13,7 +12,6 @@ ego_planner
 /home/xingxun/uav_control/devel/.private/ego_planner/share/roseus/ros/ego_planner/msg/DataDisp.l /home/xingxun/uav_control/devel/share/roseus/ros/ego_planner/msg/DataDisp.l
 /home/xingxun/uav_control/devel/.private/ego_planner/share/roseus/ros/ego_planner/msg/MultiBsplines.l /home/xingxun/uav_control/devel/share/roseus/ros/ego_planner/msg/MultiBsplines.l
 /home/xingxun/uav_control/devel/.private/ego_planner/share/roseus/ros/ego_planner/msg/Bspline.l /home/xingxun/uav_control/devel/share/roseus/ros/ego_planner/msg/Bspline.l
-/home/xingxun/uav_control/devel/.private/ego_planner/share/traj_utils/cmake/traj_utils-msg-paths.cmake /home/xingxun/uav_control/devel/share/traj_utils/cmake/traj_utils-msg-paths.cmake
 /home/xingxun/uav_control/devel/.private/ego_planner/share/ego_planner/cmake/ego_plannerConfig-version.cmake /home/xingxun/uav_control/devel/share/ego_planner/cmake/ego_plannerConfig-version.cmake
 /home/xingxun/uav_control/devel/.private/ego_planner/share/ego_planner/cmake/ego_planner-msg-extras.cmake /home/xingxun/uav_control/devel/share/ego_planner/cmake/ego_planner-msg-extras.cmake
 /home/xingxun/uav_control/devel/.private/ego_planner/share/ego_planner/cmake/ego_planner-msg-paths.cmake /home/xingxun/uav_control/devel/share/ego_planner/cmake/ego_planner-msg-paths.cmake
@@ -24,10 +22,7 @@ ego_planner
 /home/xingxun/uav_control/devel/.private/ego_planner/share/gennodejs/ros/ego_planner/msg/_index.js /home/xingxun/uav_control/devel/share/gennodejs/ros/ego_planner/msg/_index.js
 /home/xingxun/uav_control/devel/.private/ego_planner/share/gennodejs/ros/ego_planner/msg/MultiBsplines.js /home/xingxun/uav_control/devel/share/gennodejs/ros/ego_planner/msg/MultiBsplines.js
 /home/xingxun/uav_control/devel/.private/ego_planner/lib/libtraj_utils.so /home/xingxun/uav_control/devel/lib/libtraj_utils.so
-/home/xingxun/uav_control/devel/.private/ego_planner/lib/libego_planner.so /home/xingxun/uav_control/devel/lib/libego_planner.so
 /home/xingxun/uav_control/devel/.private/ego_planner/lib/pkgconfig/ego_planner.pc /home/xingxun/uav_control/devel/lib/pkgconfig/ego_planner.pc
-/home/xingxun/uav_control/devel/.private/ego_planner/lib/python3/dist-packages/ego_planer/__init__.py /home/xingxun/uav_control/devel/lib/python3/dist-packages/ego_planer/__init__.py
-/home/xingxun/uav_control/devel/.private/ego_planner/lib/python3/dist-packages/traj_utils/__init__.py /home/xingxun/uav_control/devel/lib/python3/dist-packages/traj_utils/__init__.py
 /home/xingxun/uav_control/devel/.private/ego_planner/lib/python3/dist-packages/ego_planner/__init__.py /home/xingxun/uav_control/devel/lib/python3/dist-packages/ego_planner/__init__.py
 /home/xingxun/uav_control/devel/.private/ego_planner/lib/python3/dist-packages/ego_planner/msg/_Bspline.py /home/xingxun/uav_control/devel/lib/python3/dist-packages/ego_planner/msg/_Bspline.py
 /home/xingxun/uav_control/devel/.private/ego_planner/lib/python3/dist-packages/ego_planner/msg/__init__.py /home/xingxun/uav_control/devel/lib/python3/dist-packages/ego_planner/msg/__init__.py

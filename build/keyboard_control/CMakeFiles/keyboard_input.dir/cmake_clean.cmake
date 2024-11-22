@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "/home/xingxun/uav_control/devel/.private/keyboard_control/lib/keyboard_control/keyboard_input"
   "/home/xingxun/uav_control/devel/.private/keyboard_control/lib/keyboard_control/keyboard_input.pdb"
   "CMakeFiles/keyboard_input.dir/src/keyboard_input.cpp.o"
+  "CMakeFiles/keyboard_input.dir/src/keyboard_input.cpp.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

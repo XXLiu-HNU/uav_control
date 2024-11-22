@@ -1,0 +1,9 @@
+<launch>
+    <arg name="drone_id"/>
+    <node pkg="circle" name="uav$(arg drone_id)_takeoff" type="circle_node" output="screen">
+        <remap from="uav0/mavros/state" to="uav$(arg drone_id)/mavros/state" />
+        <remap from="uav0/mavros/setpoint_position/local"  to="uav$(arg drone_id)/mavros/setpoint_position/local" />
+        <remap from="uav0/mavros/cmd/arming" to="uav$(arg drone_id)/mavros/cmd/arming" />
+        <remap from="uav0/mavros/set_mode" to="uav$(arg drone_id)/mavros/set_mode" />
+    </node>
+</launch>

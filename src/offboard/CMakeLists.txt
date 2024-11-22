@@ -12,6 +12,7 @@ find_package(catkin REQUIRED COMPONENTS
   mavros_msgs
   roscpp
   std_msgs
+  nav_msgs
 )
 
 
@@ -30,6 +31,6 @@ add_executable(${PROJECT_NAME}_node src/offboard_node.cpp)
 target_link_libraries(${PROJECT_NAME}_node  ${catkin_LIBRARIES})
 
 
-catkin_install_python(PROGRAMS scripts/fly.py
+catkin_install_python(PROGRAMS scripts/vis.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )

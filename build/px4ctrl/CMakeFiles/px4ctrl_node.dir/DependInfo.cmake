@@ -1,37 +1,26 @@
+
+# Consider dependencies only in project.
+set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
+
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
-  "CXX"
-  )
-# The set of files for implicit dependencies of each language:
-set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/xingxun/uav_control/src/px4ctrl/src/PX4CtrlFSM.cpp" "/home/xingxun/uav_control/build/px4ctrl/CMakeFiles/px4ctrl_node.dir/src/PX4CtrlFSM.cpp.o"
-  "/home/xingxun/uav_control/src/px4ctrl/src/PX4CtrlParam.cpp" "/home/xingxun/uav_control/build/px4ctrl/CMakeFiles/px4ctrl_node.dir/src/PX4CtrlParam.cpp.o"
-  "/home/xingxun/uav_control/src/px4ctrl/src/controller.cpp" "/home/xingxun/uav_control/build/px4ctrl/CMakeFiles/px4ctrl_node.dir/src/controller.cpp.o"
-  "/home/xingxun/uav_control/src/px4ctrl/src/input.cpp" "/home/xingxun/uav_control/build/px4ctrl/CMakeFiles/px4ctrl_node.dir/src/input.cpp.o"
-  "/home/xingxun/uav_control/src/px4ctrl/src/px4ctrl_node.cpp" "/home/xingxun/uav_control/build/px4ctrl/CMakeFiles/px4ctrl_node.dir/src/px4ctrl_node.cpp.o"
-  )
-set(CMAKE_CXX_COMPILER_ID "GNU")
-
-# Preprocessor definitions for this target.
-set(CMAKE_TARGET_DEFINITIONS_CXX
-  "ROSCONSOLE_BACKEND_LOG4CXX"
-  "ROS_BUILD_SHARED_LIBS=1"
-  "ROS_PACKAGE_NAME=\"px4ctrl\""
   )
 
-# The include file search paths:
-set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/xingxun/uav_control/devel/.private/quadrotor_msgs/include"
-  "/home/xingxun/uav_control/src/utils/uav_utils/include"
-  "/opt/ros/noetic/include"
-  "/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
-  "/usr/include/eigen3"
-  "/home/xingxun/uav_control/src/px4ctrl/include/px4ctrl"
-  "/home/xingxun/uav_control/src/px4ctrl/include"
+# The set of dependency files which are needed:
+set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/xingxun/uav_control/src/px4ctrl/src/PX4CtrlFSM.cpp" "CMakeFiles/px4ctrl_node.dir/src/PX4CtrlFSM.cpp.o" "gcc" "CMakeFiles/px4ctrl_node.dir/src/PX4CtrlFSM.cpp.o.d"
+  "/home/xingxun/uav_control/src/px4ctrl/src/PX4CtrlParam.cpp" "CMakeFiles/px4ctrl_node.dir/src/PX4CtrlParam.cpp.o" "gcc" "CMakeFiles/px4ctrl_node.dir/src/PX4CtrlParam.cpp.o.d"
+  "/home/xingxun/uav_control/src/px4ctrl/src/controller.cpp" "CMakeFiles/px4ctrl_node.dir/src/controller.cpp.o" "gcc" "CMakeFiles/px4ctrl_node.dir/src/controller.cpp.o.d"
+  "/home/xingxun/uav_control/src/px4ctrl/src/input.cpp" "CMakeFiles/px4ctrl_node.dir/src/input.cpp.o" "gcc" "CMakeFiles/px4ctrl_node.dir/src/input.cpp.o.d"
+  "/home/xingxun/uav_control/src/px4ctrl/src/px4ctrl_node.cpp" "CMakeFiles/px4ctrl_node.dir/src/px4ctrl_node.cpp.o" "gcc" "CMakeFiles/px4ctrl_node.dir/src/px4ctrl_node.cpp.o.d"
   )
 
-# Targets to which this target links.
-set(CMAKE_TARGET_LINKED_INFO_FILES
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
+  )
+
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_FORWARD_LINKED_INFO_FILES
   )
 
 # Fortran module output directory.

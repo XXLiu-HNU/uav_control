@@ -1,0 +1,1 @@
+/home/xingxun/uav_control/devel/.private/onboard_detector/share/onboard_detector/cmake/onboard_detectorConfig.cmake

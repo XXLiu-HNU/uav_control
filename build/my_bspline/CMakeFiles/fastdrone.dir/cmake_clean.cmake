@@ -2,7 +2,9 @@ file(REMOVE_RECURSE
   "/home/xingxun/uav_control/devel/.private/my_bspline/lib/my_bspline/fastdrone"
   "/home/xingxun/uav_control/devel/.private/my_bspline/lib/my_bspline/fastdrone.pdb"
   "CMakeFiles/fastdrone.dir/src/fastdrone.cpp.o"
+  "CMakeFiles/fastdrone.dir/src/fastdrone.cpp.o.d"
   "CMakeFiles/fastdrone.dir/src/uniform_bspline.cpp.o"
+  "CMakeFiles/fastdrone.dir/src/uniform_bspline.cpp.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

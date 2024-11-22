@@ -10,13 +10,13 @@ PX4CtrlFSM::PX4CtrlFSM(Parameter_t &param_, LinearControl &controller_) : param(
 	hover_pose.setZero();
 }
 
-/*
-		Finite State Machine
+/* 
+        Finite State Machine
 
-		  system start
-				|
-				|
-				v
+	      system start
+	            |
+	            |
+	            v
 	----- > MANUAL_CTRL <-----------------
 	|         ^   |    \                 |
 	|         |   |     \                |
@@ -48,7 +48,7 @@ void PX4CtrlFSM::process()
 	{
 	case MANUAL_CTRL:
 	{
-		/* if (rc_data.enter_hover_mode) // Try to jump to AUTO_HOVER
+		if (rc_data.enter_hover_mode) // Try to jump to AUTO_HOVER
 		{
 			if (!odom_is_received(now_time))
 			{
@@ -117,7 +117,9 @@ void PX4CtrlFSM::process()
 			state = AUTO_TAKEOFF;
 			controller.resetThrustMapping();
 			set_start_pose_for_takeoff_land(odom_data);
+			ROS_INFO("try mode change!");
 			toggle_offboard_mode(true);				  // toggle on offboard before arm
+			
 			for (int i = 0; i < 10 && ros::ok(); ++i) // wait for 0.1 seconds to allow mode change by FMU // mark
 			{
 				ros::Duration(0.01).sleep();
@@ -130,24 +132,8 @@ void PX4CtrlFSM::process()
 			takeoff_land.toggle_takeoff_land_time = now_time;
 
 			ROS_INFO("\033[32m[px4ctrl] MANUAL_CTRL(L1) --> AUTO_TAKEOFF\033[32m");
-		} */
-
-		state = AUTO_TAKEOFF;
-		controller.resetThrustMapping();
-		set_start_pose_for_takeoff_land(odom_data);
-		toggle_offboard_mode(true);				  // toggle on offboard before arm
-		for (int i = 0; i < 10 && ros::ok(); ++i) // wait for 0.1 seconds to allow mode change by FMU // mark
-		{
-			ros::Duration(0.01).sleep();
-			ros::spinOnce();
 		}
-		if (param.takeoff_land.enable_auto_arm)
-		{
-			toggle_arm_disarm(true);
-		}
-		takeoff_land.toggle_takeoff_land_time = now_time;
 
-		ROS_INFO("\033[32m[px4ctrl] MANUAL_CTRL(L1) --> AUTO_TAKEOFF\033[32m");
 		if (rc_data.toggle_reboot) // Try to reboot. EKF2 based PX4 FCU requires reboot when its state estimator goes wrong.
 		{
 			if (state_data.current_state.armed)
@@ -163,14 +149,14 @@ void PX4CtrlFSM::process()
 
 	case AUTO_HOVER:
 	{
-		if (!odom_is_received(now_time))
+		if (!rc_data.is_hover_mode || !odom_is_received(now_time))
 		{
 			state = MANUAL_CTRL;
 			toggle_offboard_mode(false);
 
 			ROS_WARN("[px4ctrl] AUTO_HOVER(L2) --> MANUAL_CTRL(L1)");
 		}
-		else if (cmd_is_received(now_time))
+		else if (rc_data.is_command_mode && cmd_is_received(now_time))
 		{
 			if (state_data.current_state.mode == "OFFBOARD")
 			{
@@ -191,7 +177,8 @@ void PX4CtrlFSM::process()
 		{
 			set_hov_with_rc();
 			des = get_hover_des();
-			if ((takeoff_land.delay_trigger.first && now_time > takeoff_land.delay_trigger.second))
+			if ((rc_data.enter_command_mode) ||
+				(takeoff_land.delay_trigger.first && now_time > takeoff_land.delay_trigger.second))
 			{
 				takeoff_land.delay_trigger.first = false;
 				publish_trigger(odom_data.msg);
@@ -206,14 +193,14 @@ void PX4CtrlFSM::process()
 
 	case CMD_CTRL:
 	{
-		if (!odom_is_received(now_time))
+		if (!rc_data.is_hover_mode || !odom_is_received(now_time))
 		{
 			state = MANUAL_CTRL;
 			toggle_offboard_mode(false);
 
 			ROS_WARN("[px4ctrl] From CMD_CTRL(L3) to MANUAL_CTRL(L1)!");
 		}
-		else if (!cmd_is_received(now_time))
+		else if (!rc_data.is_command_mode || !cmd_is_received(now_time))
 		{
 			state = AUTO_HOVER;
 			set_hov_with_odom();
@@ -239,9 +226,7 @@ void PX4CtrlFSM::process()
 	{
 		if ((now_time - takeoff_land.toggle_takeoff_land_time).toSec() < AutoTakeoffLand_t::MOTORS_SPEEDUP_TIME) // Wait for several seconds to warn prople.
 		{
-			//ROS_INFO("AUTO_TAKEOFF! now_time= %f  ",(now_time - takeoff_land.toggle_takeoff_land_time).toSec());
 			des = get_rotor_speed_up_des(now_time);
-			toggle_offboard_mode(true);
 		}
 		else if (odom_data.p(2) >= (takeoff_land.start_pose(2) + param.takeoff_land.height)) // reach the desired height
 		{
@@ -254,10 +239,7 @@ void PX4CtrlFSM::process()
 		}
 		else
 		{
-
-			ROS_INFO("READY FLY!");
 			des = get_takeoff_land_des(param.takeoff_land.speed);
-			
 		}
 
 		break;
@@ -323,7 +305,8 @@ void PX4CtrlFSM::process()
 	if (state == AUTO_HOVER || state == CMD_CTRL)
 	{
 		// controller.estimateThrustModel(imu_data.a, bat_data.volt, param);
-		controller.estimateThrustModel(imu_data.a, param);
+		controller.estimateThrustModel(imu_data.a,param);
+
 	}
 
 	// STEP3: solve and update new control commands
@@ -403,7 +386,7 @@ void PX4CtrlFSM::land_detector(const State_t state, const Desired_State_t &des, 
 		}
 		else if (C12_satisfy && is_last_C12_satisfy)
 		{
-			if ((ros::Time::now() - time_C12_reached).toSec() > TIME_KEEP_C) // Constraint 3 reached
+			if ((ros::Time::now() - time_C12_reached).toSec() > TIME_KEEP_C) //Constraint 3 reached
 			{
 				takeoff_land.landed = true;
 			}
@@ -461,7 +444,7 @@ Desired_State_t PX4CtrlFSM::get_rotor_speed_up_des(const ros::Time now)
 }
 
 Desired_State_t PX4CtrlFSM::get_takeoff_land_des(const double speed)
-{	
+{
 	ros::Time now = ros::Time::now();
 	double delta_t = (now - takeoff_land.toggle_takeoff_land_time).toSec() - (speed > 0 ? AutoTakeoffLand_t::MOTORS_SPEEDUP_TIME : 0); // speed > 0 means takeoff
 	// takeoff_land.last_set_cmd_time = now;
@@ -634,7 +617,7 @@ bool PX4CtrlFSM::toggle_offboard_mode(bool on_off)
 	return true;
 
 	// if (param.print_dbg)
-	ROS_INFO("offb_set_mode mode_sent=%d(uint8_t)\n", offb_set_mode.response.mode_sent);
+	// 	printf("offb_set_mode mode_sent=%d(uint8_t)\n", offb_set_mode.response.mode_sent);
 }
 
 bool PX4CtrlFSM::toggle_arm_disarm(bool arm)

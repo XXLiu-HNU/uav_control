@@ -1,0 +1,6 @@
+Symlinking /home/xingxun/uav_control/devel/share/onboard_detector/cmake/onboard_detectorConfig-version.cmake
+Symlinking /home/xingxun/uav_control/devel/share/onboard_detector/cmake/onboard_detectorConfig.cmake
+Symlinking /home/xingxun/uav_control/devel/lib/libonboard_detector.so
+Symlinking /home/xingxun/uav_control/devel/lib/pkgconfig/onboard_detector.pc
+Symlinking /home/xingxun/uav_control/devel/lib/onboard_detector/detector_node
+Symlinking /home/xingxun/uav_control/devel/lib/onboard_detector/fake_detector_node
