@@ -1,8 +1,0 @@
-prefix=/home/xingxun/uav_control/devel/.private/ego_planner
-
-Name: ego_planner
-Description: Description of ego_planner
-Version: 0.0.0
-Cflags: -I/home/xingxun/uav_control/devel/.private/ego_planner/include -I/home/xingxun/uav_control/src/ego_planner/include
-Libs: -L${prefix}/lib -lego_planner
-Requires: message_runtime

@@ -1,8 +1,0 @@
-prefix=/home/xingxun/uav_control/install
-
-Name: ego_planner
-Description: Description of ego_planner
-Version: 0.0.0
-Cflags: -I${prefix}/include
-Libs: -L${prefix}/lib -lego_planner
-Requires: message_runtime

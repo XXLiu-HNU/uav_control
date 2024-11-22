@@ -1,1 +1,0 @@
-/home/xingxun/uav_control/devel/.private/rviz_plugins/lib/pkgconfig/rviz_plugins.pc

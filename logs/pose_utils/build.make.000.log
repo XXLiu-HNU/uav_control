@@ -1,3 +1,0 @@
-[ 50%] [32mBuilding CXX object CMakeFiles/pose_utils.dir/src/pose_utils.cpp.o[0m
-[100%] [32m[1mLinking CXX shared library /home/xingxun/uav_control/devel/.private/pose_utils/lib/libpose_utils.so[0m
-[100%] Built target pose_utils

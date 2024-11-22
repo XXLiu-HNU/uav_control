@@ -1,8 +1,0 @@
-prefix=/home/xingxun/uav_control/devel/.private/onboard_detector
-
-Name: onboard_detector
-Description: Description of onboard_detector
-Version: 1.0.0
-Cflags: -I/home/xingxun/uav_control/src/onboard_detector/include
-Libs: -L${prefix}/lib -lonboard_detector
-Requires: roscpp rospy std_msgs

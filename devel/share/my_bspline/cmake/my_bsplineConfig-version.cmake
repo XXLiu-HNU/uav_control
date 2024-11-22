@@ -1,1 +1,0 @@
-/home/xingxun/uav_control/devel/.private/my_bspline/share/my_bspline/cmake/my_bsplineConfig-version.cmake

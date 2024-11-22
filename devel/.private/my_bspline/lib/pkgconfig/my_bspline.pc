@@ -1,8 +1,0 @@
-prefix=/home/xingxun/uav_control/devel/.private/my_bspline
-
-Name: my_bspline
-Description: Description of my_bspline
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

@@ -1,1 +1,0 @@
-/home/xingxun/uav_control/devel/.private/uav_utils/lib/pkgconfig/uav_utils.pc

@@ -1,1 +1,0 @@
-/opt/cmake-3.30.3-linux-x86_64/bin/cmake -S/home/xingxun/uav_control/src/utils/uav_utils -B/home/xingxun/uav_control/build/uav_utils --check-build-system CMakeFiles/Makefile.cmake 0

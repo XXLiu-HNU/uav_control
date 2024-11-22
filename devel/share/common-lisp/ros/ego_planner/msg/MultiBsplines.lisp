@@ -1,1 +1,0 @@
-/home/xingxun/uav_control/devel/.private/ego_planner/share/common-lisp/ros/ego_planner/msg/MultiBsplines.lisp

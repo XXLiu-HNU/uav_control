@@ -1,1 +1,0 @@
-/home/xingxun/uav_control/devel/.private/keyboard_control/lib/pkgconfig/keyboard_control.pc

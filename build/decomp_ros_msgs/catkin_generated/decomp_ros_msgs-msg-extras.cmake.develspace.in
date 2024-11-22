@@ -1,2 +1,0 @@
-set(decomp_ros_msgs_MESSAGE_FILES "/home/xingxun/uav_control/src/utils/DecompROS/decomp_ros_msgs/msg/Ellipsoid.msg;/home/xingxun/uav_control/src/utils/DecompROS/decomp_ros_msgs/msg/EllipsoidArray.msg;/home/xingxun/uav_control/src/utils/DecompROS/decomp_ros_msgs/msg/Polyhedron.msg;/home/xingxun/uav_control/src/utils/DecompROS/decomp_ros_msgs/msg/PolyhedronArray.msg")
-set(decomp_ros_msgs_SERVICE_FILES "")

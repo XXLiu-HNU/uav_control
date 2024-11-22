@@ -1,1 +1,0 @@
-/home/xingxun/uav_control/devel/.private/my_bspline/lib/pkgconfig/my_bspline.pc

@@ -1,1 +1,0 @@
-/home/xingxun/uav_control/devel/.private/decomp_ros_msgs/include/decomp_ros_msgs/Polyhedron.h

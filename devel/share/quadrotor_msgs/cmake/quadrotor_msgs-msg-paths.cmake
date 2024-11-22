@@ -1,1 +1,0 @@
-/home/xingxun/uav_control/devel/.private/quadrotor_msgs/share/quadrotor_msgs/cmake/quadrotor_msgs-msg-paths.cmake

@@ -1,8 +1,0 @@
-prefix=/home/xingxun/uav_control/install
-
-Name: keyboard_control
-Description: Description of keyboard_control
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

@@ -1,9 +1,0 @@
-Symlinking /home/xingxun/uav_control/devel/share/offboard/cmake/offboardConfig-version.cmake
-Symlinking /home/xingxun/uav_control/devel/share/offboard/cmake/offboardConfig.cmake
-Symlinking /home/xingxun/uav_control/devel/lib/pkgconfig/offboard.pc
-Symlinking /home/xingxun/uav_control/devel/lib/offboard/vis.py
-Symlinking /home/xingxun/uav_control/devel/lib/offboard/cmake.lock
-Symlinking /home/xingxun/uav_control/devel/lib/offboard/offboard_node
-Cleaning: (/home/xingxun/uav_control/devel/.private/offboard/lib/offboard/fly.py, /home/xingxun/uav_control/devel/lib/offboard/fly.py)
-Unlinking: /home/xingxun/uav_control/devel/lib/offboard/fly.py
-Already unlinked: {}

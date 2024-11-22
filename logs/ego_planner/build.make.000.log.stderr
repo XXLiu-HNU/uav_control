@@ -1,4 +1,0 @@
-[01m[K/home/xingxun/uav_control/src/ego_planner/src/planning_visualization.cpp:[m[K In member function ‘[01m[Kvoid ego_planner::PlanningVisualization::displayMultiInitPathList(std::vector<std::vector<Eigen::Matrix<double, 3, 1> > >, double)[m[K’:
-[01m[K/home/xingxun/uav_control/src/ego_planner/src/planning_visualization.cpp:186:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<Eigen::Matrix<double, 3, 1> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
-  186 |     for ( int id=0; [01;35m[Kid<init_trajs.size()[m[K; id++ )
-      |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~[m[K

@@ -1,1 +1,0 @@
-/home/xingxun/uav_control/devel/.private/px4ctrl/lib/pkgconfig/px4ctrl.pc

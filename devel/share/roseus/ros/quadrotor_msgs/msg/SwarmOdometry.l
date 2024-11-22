@@ -1,1 +1,0 @@
-/home/xingxun/uav_control/devel/.private/quadrotor_msgs/share/roseus/ros/quadrotor_msgs/msg/SwarmOdometry.l

@@ -1,1 +1,0 @@
-/home/xingxun/uav_control/devel/.private/quadrotor_msgs/lib/pkgconfig/quadrotor_msgs.pc
